@@ -1,0 +1,227 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background-image: url(images/128-87.jpg);
+    background-repeat: repeat;
+}
+
+/* TODO: MAKE THE NAVBAR BACKGROUND FADE IN ON SCROLL DOWN AND BACK OUT ON SCROLL UP */
+nav.navbar.navbar-fixed-top.navbar-inverse {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+    padding: 5px 0;
+    transition: background 0.7s;
+}
+
+nav.navbar.navbar-fixed-top.navbar-inverse.scrolled {
+    background: rgba(134,0,56,0.7);
+    transition: background 0.7s;
+}
+
+#navbar-collapse ul.nav li a {
+    color: white;
+    padding: 20px 15px;
+    font-size: 1.5em;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+#navbar-collapse ul.nav li a:hover {
+    font-size: 1.8em;
+    text-shadow: 1.4em 1.4em 1em black;
+    transition: all 1s;
+}
+
+#navbar-collapse ul.nav li a#callToAction {
+	color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#navbar-collapse ul.nav li a#callToAction:hover {
+    box-shadow: 1.2em 1.2em 5em black;
+    text-shadow: none;
+}
+
+
+li>a#callToAction {
+    background-color: #F05133;
+    border-radius: 5em;
+}
+
+button.navbar-toggle.collapsed {
+    border-color: white;
+}
+
+button.navbar-toggle.collapsed:hover {
+    border-color: white;
+    background: white;
+}
+
+button.navbar-toggle.collapsed:active {
+    background: #860038;
+}
+
+button.navbar-toggle.collapsed:visited {
+    background: #860038;
+}
+
+h1 {
+    display: none;
+}
+
+div#top.cover {
+    background-image: url(images/kitchen.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+#logoPhoto {
+	max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    padding: 5em 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+section {
+    padding 5% 0;
+    margin-top: 9em;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 10em;
+    color: #860038;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 3em;
+/*    font-weight: bold;*/
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.col-md-4 {
+    padding: 3em 0;
+}
+
+img.bioPic {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+#contactUs {
+	background-image: url(images/gsPhoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: inset 1000px 1000px 100px rgba(0,0,0,0.3);
+}
+
+button {
+    display: block;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em;
+    font-weight: bold;
+    background: #F05133;
+    border: none;
+    border-radius: 2em;
+    padding: 1em 1em;
+    margin: 5.4em auto 5.4em;
+    outline: none;
+}
+
+button:hover {
+    background-color: #860038;
+    color: #FDBB30;
+}
+
+div#buttonArea.container {
+    padding: 0 4.5em;
+}
+
+a.callToAction {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+/*
+a.callToAction:hover {
+    color: #FDBB30;
+    background: #860038;
+}
+*/
+
+/* TODO: INSPECT AND ADJUST PULSE */
+
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(240, 81, 50, 0.75);
+  }
+}
+.hvr-back-pulse {
+  display: block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+ .hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #f05133;
+  background-color: #f05133;
+  color: white;
+}
+
+
+/* MEDIA QUERYS GO HERE */
+
+@media only screen and (max-width: 609px) {
+    #logoPhoto {
+        max-width: 95%;
+}
+    h2 {
+        font-size: 5em;
+}
+    p {
+        padding: 0 1em;
+}
+    a.callToAction {
+        font-size: .8em;
+}
+
+}
+
+

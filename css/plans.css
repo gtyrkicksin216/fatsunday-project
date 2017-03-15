@@ -1,0 +1,197 @@
+/*PLANS PAGE*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background-image: url(images/128-87.jpg);
+    background-repeat: repeat;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* TODO: MAKE THE NAVBAR BACKGROUND FADE IN ON SCROLL DOWN AND BACK OUT ON SCROLL UP */
+nav.navbar.navbar-fixed-top.navbar-inverse {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+    padding: 5px 0;
+    transition: background 0.7s;
+}
+
+nav.navbar.navbar-fixed-top.navbar-inverse.scrolled{
+    background: rgba(134,0,56,0.7);
+    transition: background 0.7s;
+}
+
+#navbar-collapse ul.nav li a {
+    color: white;
+    padding: 20px 15px;
+    font-size: 1.5em;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+#navbar-collapse ul.nav li a:hover {
+    font-size: 1.8em;
+    text-shadow: 1.4em 1.4em 1em black;
+    transition: all 1s;
+}
+
+#navbar-collapse ul.nav li a#callToAction {
+	color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#navbar-collapse ul.nav li a#callToAction:hover {
+    box-shadow: 1.2em 1.2em 5em black;
+    text-shadow: none;
+}
+
+li>a#callToAction {
+    background-color: #F05133;
+    border-radius: 5em;
+}
+
+button.navbar-toggle.collapsed {
+    border-color: white;
+}
+
+button.navbar-toggle.collapsed:visited {
+    background: #860038;
+}
+
+button.navbar-toggle.collapsed:hover {
+    border-color: white;
+    background: rgba(0,0,0,0);
+}
+
+button.navbar-toggle.collapsed:active {
+    background: #860038;
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 100%;
+    color: #860038;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+button.getPlanInfo {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #F05133;
+    border-radius: 30px;
+    margin-bottom: 2rem;
+}
+
+#planPage {
+    height: 100vh;
+}
+
+.centered {
+    margin: 10% auto 0;
+}
+
+/*
+.planRow {
+    margin: 15% auto 0;
+}
+*/
+
+.planCard {
+/*    height: 400px;*/
+    padding: 0 2%;
+    border-radius: 15px;
+}
+
+.planName {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/gsPhoto.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    color: wheat;
+}
+
+.planName h2 {
+    font-size: 3em;
+    padding-top: 2rem;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.planDescription {
+    background: rgba(134,0,56,0.7);
+    padding: 10% 3%;
+    border-radius: 0 0 15px 15px;
+    color: wheat;
+    font-family: 'Raleway', sans-serif;
+    display: none;
+}
+
+.modal {
+    background: rgba(0,0,0,0.5);
+    padding-top: 15%;
+    transition: background 10s, padding-top 10s;
+    -webkit-transition: background 10s, padding-top: 10s;
+}
+
+.modal-sm {
+    min-height: 400px;
+}
+
+footer {
+    text-align: center;
+    background-color: #860038;
+    padding: 2em 0;
+    color: white;
+    font-family: serif;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 995px) {
+    .centered {
+        margin-top: 20%;
+    }
+    
+    .centered.bottom{
+        margin-top: 0;
+}
+    
+    .col-md-4 {
+        margin-bottom: 10%;
+    }
+
+}
